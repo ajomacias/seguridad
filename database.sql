@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS entities.careers
     career_name character varying(100) COLLATE pg_catalog."default" NOT NULL,
     career_semesters integer,
     created timestamp without time zone,
-    enable boolean DEFAULT true,
+    enabled boolean DEFAULT true,
     archieved boolean DEFAULT false,
     CONSTRAINT careers_pkey PRIMARY KEY (career_id),
     CONSTRAINT careers_career_name_key UNIQUE (career_name),
